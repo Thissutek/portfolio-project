@@ -1,0 +1,48 @@
+:root {
+    --bg-color: rgb(20, 20, 20);
+}
+
+body {
+    align-items: center;
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    margin: 0px;
+    overflow: hidden;
+    padding: 0px;
+}
+
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    max-width: 922px;
+    
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    height: 260px;
+    width: 300px;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.card::before {
+    background: radial-gradient(
+        800px circle at 100px 100px, 
+        rgba(255, 255, 255, 0.06),
+        transparent 40%
+    );
+    border-radius: inherit;
+    content: "";
+    height: 100%;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    z-index: 2;
+}
