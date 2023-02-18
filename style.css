@@ -31,9 +31,13 @@ body {
     cursor: pointer;
 }
 
+.card:hover::before {
+    opacity: 1;
+}
+
 .card::before {
     background: radial-gradient(
-        800px circle at 100px 100px, 
+        800px circle at var(--mouse-x) var(--mouse-y), 
         rgba(255, 255, 255, 0.06),
         transparent 40%
     );
@@ -41,8 +45,10 @@ body {
     content: "";
     height: 100%;
     left: 0px;
+    opacity: 0;
     position: absolute;
     top: 0px;
+    transition: opacity 500ms;
     width: 100%;
     z-index: 2;
 }
