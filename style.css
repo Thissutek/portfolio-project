@@ -1,5 +1,4 @@
 * {
-    background-color: rgb(20, 20, 20);
     color: antiquewhite;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -9,6 +8,10 @@
     --card-color: rgb(23, 23, 23);
 }
 
+body {
+    background-color: rgb(20, 20, 20);
+}
+
 .video-container {
     display: block;
     overflow: hidden;
@@ -16,7 +19,7 @@
     height: 600px;
     object-fit: cover;
     object-position: 50%;
-    margin: 40px auto;
+    margin: 0 auto;
     min-width: 100%;
     min-height: 100%;
 }
@@ -46,9 +49,6 @@ nav ul {
     overflow: hidden;
     
 }
-
-
-
 
 ul li {
     float: left;
@@ -83,9 +83,10 @@ section {
 #cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    max-width: 1400px;
-    
+    gap: 40px;
+    max-width: 1600px;
+    align-items: center;
+    justify-content: center;
 }
 
 #cards:hover > .card > .card-border {
@@ -95,8 +96,8 @@ section {
 .card {
     background-color: rgba(255, 255, 255, 0.1);
     
-    height: 280px;
-    width: 400px;
+    height: 300px;
+    width: 450px;
     border-radius: 10px;
     position: relative;
     cursor: pointer;
@@ -146,4 +147,32 @@ section {
     position: relative;
     width: calc(100% - 2px);
     z-index: 2;
+}
+
+.card-content img {
+    width: 440px;
+    height: 290px;
+    opacity: 50%;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.card-content .project-titles {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 500;
+    z-index: 1;
+}
+
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    /* For Mobile */
+
 }
