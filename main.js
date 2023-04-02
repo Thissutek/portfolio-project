@@ -8,3 +8,12 @@ document.getElementById("cards").onmousemove = e => {
     card.style.setProperty("--mouse-y", `${y}px`);
     }
 }
+
+const backlight = document.getElementById("backlight");
+
+document.body.onpointermove = event => {
+    const {clientX, clientY} = event;
+
+    backlight.style.left = `${clientX}px`;
+    backlight.style.top = `${clientY}px`;
+}
