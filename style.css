@@ -79,6 +79,12 @@ section {
     overflow: hidden;
     padding: 0px;
     color: antiquewhite;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 30px;
+    flex-direction: column;
 }
 
 #cards {
