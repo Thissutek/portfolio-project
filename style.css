@@ -94,6 +94,23 @@ h1 {
     max-width: 1600px;
     align-items: center;
     justify-content: center;
+    
+    
+}
+
+hr .border{
+    border-color: rgb(39, 40, 43);
+    margin: 120px auto;
+    max-width: 400px;
+    border-width: 0.5px 0px 0px;
+    border-top-style: solid;
+    margin-block-start: 0.5rem;
+    margin-block-end: 0.5rem;
+    height: 0px;
+}
+
+.border {
+    max-width: 900px;
 }
 
 #cards:hover > .card > .card-border {
@@ -102,7 +119,7 @@ h1 {
 
 .card {
     background-color: rgba(255, 255, 255, 0.1);
-    
+    background: linear-gradient(to bottom, #cefcb8, #5e5d5d);
     height: 300px;
     width: 450px;
     border-radius: 10px;
@@ -176,6 +193,20 @@ h1 {
     transform: translate(-50%, -50%);
     font-weight: 500;
     z-index: 1;
+}
+
+.skill-section  {
+    background-color: #141414;
+
+}
+
+.skills-header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 40px;
+    text-align: center;
 }
 
 #backlight {

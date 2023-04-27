@@ -1,3 +1,5 @@
+
+// Old Code for the Backlight wasn't working for new sections of the page
 /*document.getElementById("cards").onmousemove = e => {
     for(const card of document.getElementsByClassName("card")) {
     const rect = card.getBoundingClientRect(),
