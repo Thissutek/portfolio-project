@@ -1,0 +1,81 @@
+* {
+    color: antiquewhite;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root {
+    --bg-color: #141414;
+    --card-color: rgb(23, 23, 23);
+}
+
+body {
+    background-color: rgb(20, 20, 20);
+}
+
+main {
+    display: block;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-bar {
+    float: right;
+    z-index: 9;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+
+ul li {
+    float: left;
+    
+}
+
+#nav-bar li a{
+    display: block;
+    text-align: center;
+    padding: 20px 24px;
+    text-decoration: none;
+    font-size: 18px;
+    float: right;
+}
+
+li a:hover {
+    background-color: grey;
+}
+
+#backlight {
+    background-color: white;
+    height: 500px;
+    aspect-ratio: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    border-radius: 50%;
+    animation: rotate 20s infinite; 
+    background: linear-gradient(
+        to right,
+        rgb(255, 255, 255),
+        rgb(97, 97, 97),
+        rgb(39, 39, 39)
+
+    );
+}
+
+#blur {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    backdrop-filter: blur(200px);
+}

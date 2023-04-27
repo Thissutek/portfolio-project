@@ -21,6 +21,8 @@ document.body.onpointermove = event => {
 }
 */
 
+//Backlight Cards Function
+
 document.querySelectorAll(".card").forEach(card => {
     card.addEventListener("mousemove", e => {
       const rect = card.getBoundingClientRect();
@@ -38,3 +40,25 @@ document.querySelectorAll(".card").forEach(card => {
     backlight.style.left = `${event.clientX}px`;
     backlight.style.top = `${event.clientY}px`;
   });
+
+
+
+//Loading Screen Function
+
+  window.addEventListener('load', () => {
+    const loader = document.querySelector('#loader');
+    loader.style.display = 'none';
+  })
+
+  //Set the duration of the loader in millieseconds
+  const loaderDuration = 2000;
+
+  //Select the loader and website content elements
+  const loader = document.querySelector('#loader')
+  const content = document.querySelector('.content');
+
+  //Delay the removal of the loader
+  setTimeout(() => {
+    loader.style.display = 'none';
+    content.style.display = 'block';
+  }, loaderDuration);
