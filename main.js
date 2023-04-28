@@ -51,7 +51,7 @@ document.querySelectorAll(".card").forEach(card => {
   })
 
   //Set the duration of the loader in millieseconds
-  const loaderDuration = 2000;
+  const loaderDuration = 0;
 
   //Select the loader and website content elements
   const loader = document.querySelector('#loader')
@@ -62,3 +62,21 @@ document.querySelectorAll(".card").forEach(card => {
     loader.style.display = 'none';
     content.style.display = 'block';
   }, loaderDuration);
+
+
+
+//Scroll event handler function
+function animateSection() {
+  const sections = document.querySelectorAll('.skill-section');
+  const windowHeight = window.innerHeight;
+
+  sections.forEach(section => {
+    const sectionTop = section.getBoundingClientRect().top;
+
+    if (sectionTop < windowHeight / 2 ) {
+      section.classList.add('animated')
+    }
+  });
+};
+
+window.addEventListener('scroll', animateSection);
