@@ -115,6 +115,27 @@ h1 {
     flex-direction: column;
 }
 
+.arrow {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid rgb(85, 85, 85);
+}
+
+.highlight {
+    color: rgb(253, 197, 123);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
 #cards {
     display: flex;
     flex-wrap: wrap;
@@ -147,7 +168,7 @@ hr .border{
 
 .card {
     background-color: rgba(255, 255, 255, 0.1);
-    background: linear-gradient(to bottom, #cefcb8, #5e5d5d);
+    background: linear-gradient(to bottom, #f8ffe3, #5e5d5d);
     height: 300px;
     width: 450px;
     border-radius: 10px;
