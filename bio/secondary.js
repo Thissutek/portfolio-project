@@ -1,4 +1,4 @@
-const backlight = document.getElementById("backlight");
+/* const backlight = document.getElementById("backlight");
 
 document.body.onpointermove = event => {
     const { clientX, clientY } = event;
@@ -9,4 +9,4 @@ document.body.onpointermove = event => {
     }, { duration: 3000, fill: "forwards"});
     
 }
-
+*/
