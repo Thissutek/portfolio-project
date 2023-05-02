@@ -272,46 +272,74 @@ hr .border{
     text-align: center;
 }
 
-#backlight {
-    background-color: white;
-    height: 500px;
-    aspect-ratio: 1;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    translate: -50% -50%;
-    border-radius: 50%;
-    animation: rotate 20s infinite; 
-    background: linear-gradient(
-        to right,
-        rgb(255, 255, 255),
-        rgb(97, 97, 97),
-        rgb(39, 39, 39)
-
-    );
+.contact-card {
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 600px;
+    margin: 0 auto;
+    background-color: #252525;
 }
 
-#blur {
-    height: 100%;
+.contact-card h1 {
+    text-align: center;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input, 
+textarea {
     width: 100%;
-    position: absolute;
-    z-index: 2;
-    backdrop-filter: blur(200px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 20px;    
+    color: #141414;
 }
 
-@keyframes rotate {
-        from {
-            rotate: 0deg;
-        }
+button[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border: 4px;
+    cursor: pointer;
+}
 
-        50% {
-            scale: 1 1.5;
-        }
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
 
-        to {
-            rotate: 360deg;
-        }
-    }
+input:required:focus,
+textarea:required:focus {
+    border-color: #2ecc71;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+footer div {
+    padding: 10px;
+    margin: auto;
+}
+
+footer div a {
+    margin-right: 10px;
+}
+
+
 
 @media only screen and (min-width: 600px) and (max-width: 768px) {
     /* For Tablet */
