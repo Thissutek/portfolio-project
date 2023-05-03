@@ -56,10 +56,14 @@ li a {
 li a:hover {
     background-color: grey;
 }
+div.header {
+    background-image: url("./Selfie.jpg");
+    
+}
 
 div header img {
     height: 600px;
-    width: 400px;
+    width: 500px;
     border-radius: 20%;
     margin-left: 20px;
 }
@@ -69,6 +73,7 @@ div header img {
     align-items: center;
     justify-content: center;
     margin: 40px;
+    position: relative;
 }
 
 .bio-description {
