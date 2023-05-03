@@ -97,6 +97,10 @@ ul li {
     float: right;
 }
 
+li a {
+    transition: background-color 0.3s ease ;
+}
+
 li a:hover {
     background-color: grey;
 }
@@ -279,6 +283,7 @@ hr .border{
     width: 600px;
     margin: 0 auto;
     background-color: #252525;
+    border-radius: 4px;
 }
 
 .contact-card h1 {
@@ -308,21 +313,26 @@ textarea {
 }
 
 button[type="submit"] {
-    background-color: #4caf50;
+    display: block;
+    margin: auto;
+    background-color: #B0152E;
     color: white;
     padding: 12px 20px;
     border: none;
     border: 4px;
     cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ;
 }
 
 button[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #f74d69;
+    transform: translateY(-5px);
 }
 
 input:required:focus,
 textarea:required:focus {
-    border-color: #2ecc71;
+    border-color: #B0152E;
 }
 
 footer {
@@ -338,7 +348,6 @@ footer div {
 footer div a {
     margin-right: 10px;
 }
-
 
 
 @media only screen and (min-width: 600px) and (max-width: 768px) {

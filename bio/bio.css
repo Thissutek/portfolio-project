@@ -49,10 +49,38 @@ ul li {
     float: right;
 }
 
+li a {
+    transition: background-color 0.3s ease ;
+}
+
 li a:hover {
     background-color: grey;
 }
 
+div header img {
+    height: 600px;
+    width: 400px;
+    border-radius: 20%;
+    margin-left: 20px;
+}
+
+.bio-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+}
+
+.bio-description {
+    
+    margin-right: 20px;
+}
+
+.bio-description h1 {
+    margin: 0;
+}
+
+/* Old function for the backlight 
 #backlight {
     background-color: white;
     height: 500px;
@@ -93,3 +121,4 @@ li a:hover {
         rotate: 360deg;
     }
 }
+*/
