@@ -80,3 +80,23 @@ function animateSection() {
 };
 
 window.addEventListener('scroll', animateSection);
+
+// Scroll to Top Button function
+const scrollToTopBtn = document.getElementById("scroll-to-top-btn");
+
+window.addEventListener("scroll", function () {
+  //shows the button when the user scrolls far enough down
+  if (window.pageYOffset > 300) {
+    scrollToTopBtn.style.display = "block";
+  } else {
+    scrollToTopBtn.style.display = "none";
+  }
+});
+
+scrollToTopBtn.addEventListener("click", function() {
+//smooth scroll to top
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});

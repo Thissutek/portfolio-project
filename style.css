@@ -111,6 +111,21 @@ li a:hover {
     background-color: grey;
 }
 
+#scroll-to-top-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    background-color: #B0152E;
+    color: #fff;
+    cursor: pointer;
+}
+
 section {
     align-items: center;
     background-color: var(--bg-color);
