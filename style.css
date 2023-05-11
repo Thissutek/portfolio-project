@@ -135,7 +135,7 @@ section {
     background-color: var(--bg-color);
     display: flex;
     justify-content: center;
-    height: 100vh;
+    height: 80vh;
     margin: 0px;
     overflow: hidden;
     padding: 0px;
@@ -183,6 +183,30 @@ hr .border{
 
 .border {
     max-width: 900px;
+}
+
+.skill-section  {
+    background-color: #141414;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    
+}
+
+.skill-section.animated {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 0.5s ease, transform 0.5s ease;
+}
+
+
+.skills-header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 40px;
+    text-align: center;
 }
 
 #cards {
@@ -277,29 +301,6 @@ hr .border{
     z-index: 1;
 }
 
-.skill-section  {
-    background-color: #141414;
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-.skill-section.animated {
-    opacity: 1;
-    transform: translateY(0);
-    transition: 0.5s ease, transform 0.5s ease;
-}
-
-
-.skills-header {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 40px;
-    text-align: center;
-}
-
 .contact-card {
     border: 1px solid #ccc;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
@@ -375,18 +376,22 @@ footer div a {
 
 
 @media only screen and (max-width: 1200px) {
+
     #cards {
         max-width: 1200px;
         gap: 20px;
-        min-height: 200px;
+        min-height: 400px;
     }
 }
 
 @media only screen and (max-width: 960px) {
+    section {
+        height: 900px;
+    }
     #cards {
         max-width: 960px;
         gap: 10px;
-        
+        min-height: 200px;
     }
 }
 
@@ -396,7 +401,10 @@ footer div a {
         gap: 20px;
         align-items: stretch;
         margin-top: 20px;
+        min-height: 50px;
     }
+
+
 }
 
 @media only screen and (max-width: 480px) {
