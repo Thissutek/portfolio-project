@@ -176,12 +176,13 @@ h1 {
     align-items: center;
     justify-content: center;
     margin-top: 40px;
+    min-height: 400px;
     
 }
 
 hr .border{
     border-color: rgb(39, 40, 43);
-    margin: 120px auto;
+    margin: 20px auto;
     max-width: 400px;
     border-width: 0.5px 0px 0px;
     border-top-style: solid;
@@ -192,6 +193,7 @@ hr .border{
 
 .border {
     max-width: 900px;
+    
 }
 
 #cards:hover > .card > .card-border {
@@ -304,7 +306,7 @@ hr .border{
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
     padding: 20px;
     width: 600px;
-    margin: 0 auto;
+    margin: 40px auto;
     background-color: #252525;
     border-radius: 4px;
 }
@@ -372,6 +374,35 @@ footer div a {
     margin-right: 10px;
 }
 
+
+@media only screen and (max-width: 1200px) {
+    #cards {
+        max-width: 1200px;
+        gap: 20px;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    #cards {
+        max-width: 960px;
+        gap: 10px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #cards {
+        flex-direction: column;
+        gap: 20px;
+        align-items: stretch;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #cards {
+        gap: 10px;
+    }
+}
 
 @media only screen and (min-width: 600px) and (max-width: 768px) {
     /* For Tablet */
