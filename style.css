@@ -44,30 +44,6 @@ body {
     background-color: rgb(20, 20, 20);
 }
 
-.video-container {
-    display: block;
-    overflow: hidden;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-    object-position: 50%;
-    margin: 0 auto;
-    min-width: 100%;
-    min-height: 100%;
-}
-video {
-    display: block;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    object-position: center;
-}
-
-main {
-    display: block;
-}
-
 nav {
     display: flex;
     align-items: center;
@@ -115,6 +91,58 @@ li a:hover {
     background-color: grey;
 }
 
+.video-container {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: 50%;
+    margin: 0 auto;
+    min-width: 100%;
+    min-height: 100%;
+}
+video {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+.arrow {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    height: 100px;
+}
+
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid rgb(253, 197, 123);
+    animation: blink 1s infinite;
+    animation-delay: 2s;
+}
+
+@keyframes blink {
+    50% {
+        transform: scale(1.2) translateY(5px);
+    }
+
+}
+
+main {
+    display: block;
+}
+
+
+
 #scroll-to-top-btn {
     display: none;
     position: fixed;
@@ -144,25 +172,11 @@ section {
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 2rem;
     flex-direction: column;
 }
 
-.arrow {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    margin-top: 40px;
-}
 
-.arrow-down {
-    width: 0;
-    height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-top: 10px solid rgb(85, 85, 85);
-}
 
 .highlight {
     color: rgb(253, 197, 123);
@@ -390,12 +404,12 @@ footer div a {
 
 @media only screen and (max-width: 960px) {
     section {
-        height: 900px;
+        
     }
     #cards {
         max-width: 960px;
         gap: 10px;
-        min-height: 200px;
+        
     }
 }
 
@@ -405,7 +419,7 @@ footer div a {
         gap: 20px;
         align-items: stretch;
         margin-top: 20px;
-        min-height: 50px;
+        
     }
 }
 
