@@ -135,10 +135,10 @@ section {
     background-color: var(--bg-color);
     display: flex;
     justify-content: center;
-    height: 80vh;
+    height: auto;
     margin: 0px;
     overflow: hidden;
-    padding: 0px;
+    padding: 20px;
     color: antiquewhite;
     flex-direction: column;
 }
@@ -170,9 +170,13 @@ h1 {
     font-size: 1.1rem;
 }
 
+hr {
+    margin: 100px auto;
+}
+
 hr .border{
     border-color: rgb(39, 40, 43);
-    margin: 20px auto;
+    margin: 40px auto;
     max-width: 400px;
     border-width: 0.5px 0px 0px;
     border-top-style: solid;
