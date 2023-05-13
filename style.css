@@ -52,14 +52,18 @@ nav {
 
 .logo-img {
     height: auto;
-    width: 200px;
+    max-width: 100%;
+    
     margin-left: 20px;
 }
 
 .nav-bar {
-    float: right;
+    display: flex;
+    justify-content: flex-end;
     z-index: 9;
 }
+
+
 
 nav ul {
     list-style-type: none;
@@ -81,6 +85,15 @@ ul li {
     text-decoration: none;
     font-size: 18px;
     float: right;
+}
+
+nav.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #141414;
+    z-index: 9999;
 }
 
 li a {

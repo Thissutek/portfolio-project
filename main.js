@@ -100,3 +100,17 @@ scrollToTopBtn.addEventListener("click", function() {
     behavior: "smooth"
   });
 });
+
+// #nav-bar stick to the top on scroll
+const navBar = document.querySelector('nav');
+const navBarTop = navBar.offsetTop;
+
+function handleScroll() {
+  if (window.pageYOffset >= navBarTop) {
+    navBar.classList.add('fixed');
+  } else {
+    navBar.classList.remove('fixed');
+  }
+}
+
+window.addEventListener('scroll', handleScroll);
