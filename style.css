@@ -322,11 +322,12 @@ hr .border{
 .contact-card {
     border: 1px solid #ccc;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 600px;
-    margin: 40px auto;
+    padding: 2%;
+    max-width: 600px;
+    margin: 4% auto;
     background-color: #252525;
     border-radius: 4px;
+    box-sizing: border-box;
 }
 
 .contact-card h1 {
@@ -336,6 +337,7 @@ hr .border{
 form {
     max-width: 600px;
     margin: 0 auto;
+    box-sizing: border-box;
 }
 
 label {
@@ -347,6 +349,7 @@ label {
 input, 
 textarea {
     width: 100%;
+    max-width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
