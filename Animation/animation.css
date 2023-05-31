@@ -90,3 +90,39 @@ li a:hover {
     color: #fff;
     cursor: pointer;
 }
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 40px;
+    margin-top: 40px;
+}
+
+
+.grid-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.grid-item img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.gif {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+  }
+  
+  .grid-item:hover .gif {
+    opacity: 1;
+    animation: play-gif 1s steps(25) infinite;
+  }
+  
+  @keyframes play-gif {
+    100% { background-position: -4800px; } /* Assuming 25 frames in the GIF (adjust as needed) */
+  }
