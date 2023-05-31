@@ -104,25 +104,15 @@ li a:hover {
     overflow: hidden;
 }
 
-.grid-item img {
+.video {
     display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-.gif {
     width: 100%;
     height: 100%;
     object-fit: cover;
     opacity: 0.5;
-    transition: opacity 0.3s;
+    transition: opacity 0.3s ease; 
   }
-  
-  .grid-item:hover .gif {
+
+  .video:hover {
     opacity: 1;
-    animation: play-gif 1s steps(25) infinite;
-  }
-  
-  @keyframes play-gif {
-    100% { background-position: -4800px; } /* Assuming 25 frames in the GIF (adjust as needed) */
   }
