@@ -91,6 +91,40 @@ li a:hover {
     cursor: pointer;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.description {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    padding: 40px;
+    margin: 40px;
+}
+
+.description h1 {
+    margin-bottom: 20px;
+}
+
+.description p {
+    margin-bottom: 80px;
+}
+
+.project-header h1 {
+    text-align: center;
+}
+
+.link {
+    text-decoration: none;
+    font-size: 30px;
+    color: rgb(253, 197, 123);
+    font-weight: bold;
+}
+
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
