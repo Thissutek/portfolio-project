@@ -91,9 +91,23 @@ li a:hover {
     cursor: pointer;
 }
 
-.mockup-img {
+.banner-container {
     width: auto;
     max-width: 1850px;
-    height: auto;
-    max-height: 2000px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.mockup-img {
+    display: block;
+    max-width: 2000px;
+    width: 1000px;
+    margin: 0 auto;
+    height: 800px;
+    max-height: 1000px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
