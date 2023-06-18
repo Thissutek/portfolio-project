@@ -93,8 +93,8 @@ li a:hover {
 
 .banner-container {
     width: auto;
-    max-width: 1850px;
-    height: 500px;
+    max-width: 1920px;
+    height: 600px;
     overflow: hidden;
     position: relative;
 }
@@ -102,12 +102,31 @@ li a:hover {
 .mockup-img {
     display: block;
     max-width: 2000px;
-    width: 1000px;
+    width: 1920px;
     margin: 0 auto;
-    height: 800px;
+    height: 600px;
     max-height: 1000px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.summary-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.project-overview {
+    text-align: left;
+    max-width: 800px;
+    margin: 20px 80px;
+}
+
+.restrictions {
+    display: block;
+    width: auto;
+    height: auto;
 }
