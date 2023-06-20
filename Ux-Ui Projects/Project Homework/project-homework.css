@@ -130,3 +130,24 @@ li a:hover {
     width: auto;
     height: auto;
 }
+
+.design-framework {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.img-container img {
+    display: flex;
+    width: auto;
+    height: auto;
+    max-width: 1000px;
+    max-height: 500px;
+}
+
+.sketch-framework img {
+    width: 1300px;
+    height: 1000px;
+}
