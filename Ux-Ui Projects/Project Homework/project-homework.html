@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Homework</title>
     <link rel="stylesheet" href="./project-homework.css">
+    
 </head>
 <body>
     <nav>
@@ -55,11 +56,24 @@
                 <p>Establishing their already made brand by creating their design systems and using color guide and mood boards to create connection with the brand. Establishing 
                     the brand gave a better scope of the project knowing what I can work with and their values I have to re-establish within their brand.</p>
             </div>
-            <div class="img-container">
-                <img src="./Imgs/Mood Board.png" class="img-item">
-                <img src="./Imgs/Text Styles.png" class="img-item">
-                <img src="./Imgs/UI Design Library.png" class="img-item">
-            </div>
+
+            <div class="carousel">
+                <div class="carousel-inner"> 
+                  <div class="slide">
+                    <img src="./Imgs/Mood Board.png" class="img-item">
+                  </div>
+                  <div class="slide">
+                    <img src="./Imgs/Text Styles.png" class="img-item">
+                  </div>
+                  <div class="slide">
+                    <img src="./Imgs/UI Design Library.png" class="img-item">
+                  </div>
+                </div> 
+                <button class="prev-btn" onclick="prevSlide()">&#10094;</button>
+                <button class="next-btn" onclick="nextSlide()">&#10095;</button>
+              </div>
+              
+           
         </div>
         <div class="sketch-framework">
             <h1>Sketches and Ideas</h1>
@@ -86,7 +100,7 @@
             </div>
         </div>
     </section>
-
+    <script src="project-homework.js"></script>
     <button id="scroll-to-top-btn">Scroll to Top</button>
 </body>
 </html>
