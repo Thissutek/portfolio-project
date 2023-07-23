@@ -140,23 +140,45 @@ li a:hover {
     flex-direction: column;
 }
 
+
+
 .carousel-inner {
     display: flex;
     overflow: hidden;
   }
   
-  .slide {
+  .slide-1 {
     flex: 0 0 100%;
     transition: transform 0.3s ease-in-out;
   }
   
-  .slide img {
+  .slide-1 img {
     width: 100%;
-    max-width: 600px;
+    max-width: 1300px;
   }
   
 
 .sketch-framework img {
     width: 1300px;
     height: 1000px;
+}
+
+.slide-2 {
+    flex: 0 0 100%;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+.slide-2 img {
+    width: 100%;
+    max-width: 1300px;
+  }
+  
+
+.sketch-framework img {
+    width: 1300px;
+    height: 1000px;
+}
+
+.prev-btn .next-btn {
+    
 }
