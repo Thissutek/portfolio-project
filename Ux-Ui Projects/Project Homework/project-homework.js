@@ -51,6 +51,7 @@ document.querySelector('.carousel-2 .next-btn').addEventListener('click', () => 
 })
 */
 
+/*
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -78,4 +79,44 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
+}
+
+*/
+
+// JavaScript
+let slideIndex1 = 1;
+let slideIndex2 = 1;
+
+showSlides(slideIndex1, 1);
+showSlides(slideIndex2, 2);
+
+function plusSlides(n, carouselIndex) {
+  showSlides(slideIndex1 += n, carouselIndex);
+}
+
+function currentSlide(n, carouselIndex) {
+  showSlides(slideIndex1 = n, carouselIndex);
+}
+
+function showSlides(n, carouselIndex) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) { n = 1; }
+  if (n < 1) { n = slides.length; }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[n - 1].style.display = "block";
+  dots[n - 1].className += " active";
+
+  // Update the slide index based on the carousel
+  if (carouselIndex === 1) {
+    slideIndex1 = n;
+  } else if (carouselIndex === 2) {
+    slideIndex2 = n;
+  }
 }
